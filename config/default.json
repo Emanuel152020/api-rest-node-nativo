@@ -9,7 +9,8 @@
         }
     },
     "secretkeys":{
-        "cryptojs": "ACKYW@27JVt"
+        "cryptojs": "ACKYW@27JVt",
+        "jwt": "ABC@2020*"
     },
     "roles":{
         "student": 1,

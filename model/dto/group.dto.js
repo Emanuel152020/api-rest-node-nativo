@@ -13,7 +13,7 @@ schema.statics = {
         this.find(query, cb);
     },
     getByCode: function(query, cb){
-        doc.find(query, cb);
+        this.find(query, cb);
     },
     update: function(query, data, cb){
         this.findOneAndUpdate(query, {$set: data}, {new: true}, cb);
