@@ -16,5 +16,6 @@
         "student": 1,
         "teacher": 2
     },
-    "server-port": 3001
+    "server-port": 3001,
+    "sessionTime": 3600
 }
