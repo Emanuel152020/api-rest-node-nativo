@@ -51,6 +51,9 @@ courseRoutes(app);
 const facultyRoutes = require("./routes/faculty.routes");
 facultyRoutes(app);
 
+//** Department Routes Loading */
+const departmentRoutes = require("./routes/department.routes");
+departmentRoutes(app);
 
 app.listen(port, () => {
 console.log("Server is running....")
