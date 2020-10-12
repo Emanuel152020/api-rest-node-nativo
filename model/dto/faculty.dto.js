@@ -1,21 +1,20 @@
 /** packages */
 const mongoose = require("mongoose");
+const db = require("../db-connection/mongodb")
 
 /** using schema */
-const schema = require("../schemas/user.schema");
+const schema = require("../schemas/faculty.schema");
+db();
 
 schema.statics = {
     create: function(data, cb){
-        let doc = new this(data);
-        doc.save(cb);
+    let doc = new this(data);
+    doc.save(cb);
     },
     getAll: function(query, cb){
         this.find(query, cb);
     },
     getByCode: function(query, cb){
-        this.find(query, cb);
-    },
-    login: function(query, cb){
         this.find(query, cb);
     },
     update: function(query, data, cb){
@@ -26,5 +25,5 @@ schema.statics = {
     }
 };
 
-const dto = mongoose.model("coll_user", schema);
+const dto = mongoose.model("coll_faculty", schema);
 module.exports = dto;
